@@ -93,3 +93,63 @@ main {
     padding: 10px;
 }
 
+.loginContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #171717;
+    height: 70vh;
+    width: 30%;
+    min-width: max-content;
+    border-radius: 20px;
+    box-shadow: 3px 3px 15px black;
+    text-align: center;
+    color: white;
+    border: 1px solid silver;
+}
+
+.loginContainer form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 auto 0 auto;
+}
+
+.loginContainer input {
+    border-radius: 10px;
+    background-color:#222222;
+    width: 90%;
+    border: none;
+    outline: none;
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+    color: var(--lightBlue);
+    padding: 10px 15px 10px 15px;
+    margin: 10px 0 15px 0;
+}
+
+.loginContainer h2{
+    font-size: 30px;
+    text-shadow: 2px 2px 8px black;
+}
+
+.loginContainer  input[type="submit"]{
+    margin: auto;
+    width: max-content;
+    padding: .5rem 2rem .5rem 2rem;
+    border: 1px solid black;
+    color: var(--lightBlue);
+    box-shadow: 1px 1px 5px black;
+}
+
+.loginContainer  input[type="submit"]:hover{
+    color: black;
+    background-color:var(--lightBlue);
+    transition: box-shadow .2s;
+    box-shadow: 1px 1px 20px var(--lightBlue);
+}
+
+.loginContainer a {
+    color: #14FFEC;
+    font-size: 20px;
+    text-decoration: none;
+}
