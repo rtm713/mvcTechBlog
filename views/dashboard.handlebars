@@ -5,15 +5,17 @@
 </div>
 
 <div id="postList">
-
-    <a href="" class="blogPost">
-        <h2>Blog Title</h2>
-        <p>this will be the blog text, blah blah blah</p>
+    {{#each posts as |post| }}
+    <a href="post/{{post.id}}" class="blogPost">
+        <h2>{{post.title}}</h2>
+        <p>{{post.body}}</p>
         <div>
-            <button>Edit</button>
-            <footer>Created on 7/4/2023</footer>
-            <button>Delete</button>
+            <button onclick="window.location.href='dashboard/edit/{{post.id}}';">Edit</button>
+            <footer>Created on {{post.date_created}}</footer>
+            <button class="deleteBtn" data-id="{{post.id}}">Delete</button>
         </div>
     </a>
-    
+    {{/each}}
 </div>
+
+<script src="/js/delete.js"></script>

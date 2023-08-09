@@ -1,0 +1,13 @@
+
+<div class="loginContainer wide">
+    <h2>Edit Post</h2>
+    <form id="newPostForm" class="wide">
+        <input type="text" id="postTitle" name="postTitle" value="{{title}}" required>
+        <br>
+        <textarea id="postBody" name="postBody" rows="6" cols="50" placeholder="Text goes here..." required>{{body}}</textarea>
+        <br>
+        <input type="submit" data-id="{{id}}" value="Create Post">
+    </form>
+</div>
+
+  <script src="/js/editPost.js"></script>
