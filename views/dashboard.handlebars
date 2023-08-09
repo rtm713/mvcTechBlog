@@ -10,7 +10,7 @@
         <h2>{{post.title}}</h2>
         <p>{{post.body}}</p>
         <div>
-            <button onclick="window.location.href='dashboard/edit/{{post.id}}';">Edit</button>
+            <button onclick="window.location.href='dashboard/edit/{{post.id}}'; return false;">Edit</button>
             <footer>Created on {{post.date_created}}</footer>
             <button class="deleteBtn" data-id="{{post.id}}">Delete</button>
         </div>
