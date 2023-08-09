@@ -153,3 +153,81 @@ main {
     font-size: 20px;
     text-decoration: none;
 }
+
+.wide {
+    width: 70%;
+}
+
+.wide h2 {
+    margin: 0;
+}
+
+.wide textarea {
+    border-radius: 10px;
+    background-color:#222222;
+    width: 90%;
+    border: none;
+    outline: none;
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+    color: var(--lightBlue);
+    padding: 10px 15px 10px 15px;
+    margin: 10px 0 15px 0;
+    resize: none;
+}
+
+#postList{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    height: max-content;
+}
+
+.blogPost div {
+    background-color: #0D7377;
+    display: flex;
+    justify-content: space-around;
+}
+
+.blogPost div button {
+    padding: 8px 20px 8px 20px;
+    margin: 8px;
+    background-color: #212121;
+    color: #14FFEC;
+    border: 1px solid #14FFEC;
+}
+
+.blogPost div button:hover {
+    background-color: #14FFEC;
+    box-shadow: 1px 1px 10px #14FFEC;
+    color: #171717;
+}
+
+#postTitle {
+    font-size: 18px;
+}
+
+#dashboardHead {
+    width: 100%;
+    text-align: center;
+    margin: -10px 0 20px 0;
+}
+
+#dashboardHead h1 {
+    color: white;
+    font-size: 40px;
+    text-shadow: 2px 2px 10px black;
+}
+
+#dashboardHead button {
+    padding: 10px;
+    background-color: #171717;
+    color: #14FFEC;
+    border: 1px solid #14FFEC;
+}
+
+#dashboardHead button:hover {
+    background-color: #14FFEC;
+    box-shadow: 1px 1px 10px #14FFEC;
+    color: #171717;
+}
