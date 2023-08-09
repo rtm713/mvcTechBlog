@@ -14,7 +14,7 @@ const signupFormHandler = async (event) => {
       if (response.ok) {
         document.location.replace('/dashBoard');
       } else {
-        alert(response.statusText);
+        alert("Username already exists");
       }
     }
   };
