@@ -45,6 +45,13 @@ nav div a {
     color: white;
 }
 
+nav button {
+    padding: 10px 15px 10px 15px;
+    background-color: #171717;
+    color: #14FFEC;
+    border: 3px solid #14FFEC;
+}
+
 main {
     display: flex;
     justify-content: space-around;
@@ -67,6 +74,10 @@ main {
 
 .blogPost:hover{
     box-shadow: 1px 1px 15px var(--lightBlue);
+}
+
+.nohover:hover{
+    box-shadow: 2px 2px 10px black;
 }
 
 .blogPost h2{
@@ -175,6 +186,37 @@ main {
     resize: none;
 }
 
+.commentBox {
+    width: 70%;
+    margin: 10px 15% 10px 15%;
+    background-color: #14FFEC;
+    border: 4px solid #0D7377;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+}
+
+.newCommentBox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#newCommentForm {
+    text-align: center;
+    width: 70%;
+}
+
+#newCommentForm textarea {
+    resize: none;
+    width: 90%;
+    background-color: #323232;
+    box-shadow: inset 2px 2px 15px black;
+    border: 2px solid white;
+    padding: 8px;
+    color: #14FFEC;
+}
+
 #postList{
     display: flex;
     justify-content: space-around;
@@ -189,7 +231,7 @@ main {
     justify-content: space-around;
 }
 
-.blogPost div button {
+.blogPost div button, #newCommentForm button {
     padding: 8px 20px 8px 20px;
     margin: 8px;
     background-color: #212121;
@@ -197,7 +239,7 @@ main {
     border: 1px solid #14FFEC;
 }
 
-.blogPost div button:hover {
+.blogPost div button:hover, #newCommentForm button:hover, nav button:hover {
     background-color: #14FFEC;
     box-shadow: 1px 1px 10px #14FFEC;
     color: #171717;

@@ -1,0 +1,25 @@
+
+<div class="blogPost wide nohover">
+    <h2>{{title}}</h2>
+    <p>{{body}}</p>
+    <footer>Post created by {{user.username}} on {{date_created}}</footer>
+</div>
+
+<div class="newCommentBox">
+    <form id="newCommentForm">
+        <textarea id="commentBody" name="commentBody" rows="6" cols="50"></textarea>
+        <br>
+        <button type="submit" data-id="{{id}}">Comment</button>
+    </form>
+</div>
+
+{{#each comments as |comment| }}
+<div class="commentBox">
+  <p>
+    {{body}}
+  </p>
+  <p>Created by {{user.username}} on {{date_created}}</p>
+</div>
+{{/each}}
+
+ <script src="/js/comment.js"></script>

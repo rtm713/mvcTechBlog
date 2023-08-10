@@ -1,22 +1,8 @@
 
-<a href="" class="blogPost">
-    <h2>Blog Title</h2>
+{{#each posts as |post| }}
+<a href="/post/{{post.id}}" class="blogPost">
+    <h2>{{post.title}}</h2>
     <p>this will be the blog text, blah blah blah</p>
-    <footer>Post created by USER on 7/4/2023</footer>
+    <footer>Post created by {{post.user.username}} on {{post.date_created}}</footer>
 </a>
-
-<a href="" class="blogPost">
-    <h2>Blog Title</h2>
-    <p>this will be the blog text, blah blah blah this will be the blog text, blah blah blah this will be the blog text, blah blah blahthis will be the blog text, blah blah blahthis will be the blog text, blah blah blahthis will be the blog text, blah blah blah</p>
-    <footer>Post created by USER on 7/4/2023</footer>
-</a>
-<a href="" class="blogPost">
-    <h2>Blog Title</h2>
-    <p>this will be the blog text, blah blah blah</p>
-    <footer>Post created by USER on 7/4/2023</footer>
-</a>
-<a href="" class="blogPost">
-    <h2>Blog Title</h2>
-    <p>this will be the blog text, blah blah blah</p>
-    <footer>Post created by USER on 7/4/2023</footer>
-</a>
+{{/each}}
