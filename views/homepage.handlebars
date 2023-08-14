@@ -2,7 +2,7 @@
 {{#each posts as |post| }}
 <a href="/post/{{post.id}}" class="blogPost">
     <h2>{{post.title}}</h2>
-    <p>this will be the blog text, blah blah blah</p>
+    <p>{{post.body}}</p>
     <footer>Post created by {{post.user.username}} on {{post.date_created}}</footer>
 </a>
 {{/each}}
