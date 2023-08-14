@@ -273,3 +273,13 @@ main {
     box-shadow: 1px 1px 10px #14FFEC;
     color: #171717;
 }
+
+#commentBlockerDiv {
+    width: 100%;
+    text-align: center;
+}
+
+#commentBlockerP {
+    color: red;
+
+}

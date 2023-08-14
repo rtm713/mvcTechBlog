@@ -5,6 +5,7 @@
     <footer>Post created by {{user.username}} on {{date_created}}</footer>
 </div>
 
+{{#if logged_in}}
 <div class="newCommentBox">
     <form id="newCommentForm">
         <textarea id="commentBody" name="commentBody" rows="6" cols="50"></textarea>
@@ -12,6 +13,11 @@
         <button type="submit" data-id="{{id}}">Comment</button>
     </form>
 </div>
+{{else}}
+<div id="commentBlockerDiv">
+  <p id="commentBlockerP">LOGIN to post comments of your own!</p>
+</div>
+{{/if}}
 
 {{#each comments as |comment| }}
 <div class="commentBox">
